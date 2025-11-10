@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "AlumniVerse",
-    description: "A social platform connecting students and alumni for mentorship, job opportunities, and collaboration.",
+  description: "Full-stack alumni networking platform: authenticated spaces for mentorship, posts, jobs, events, and secure Express + MongoDB APIs.",
     tech: ["React", "Node.js", "MongoDB", "JavaScript"],
     github: "https://github.com/geeky-vaiiib/AlumniVerse",
     live: ""
@@ -10,7 +10,7 @@ export const projects = [
   {
     id: 2,
     title: "Lokah",
-    description: "A clean, AI-driven platform for journaling and mindfulness tracking with minimal UI and calm visuals.",
+  description: "AI-powered reflective app to generate alternate selves, memory extraction, and empathetic chats using Supabase Edge Functions + rich onboarding flow.",
     tech: ["TypeScript", "React", "Tailwind CSS"],
     github: "https://github.com/geeky-vaiiib/Lokah",
     live: ""
@@ -18,7 +18,7 @@ export const projects = [
   {
     id: 3,
     title: "ProdEase",
-    description: "Productivity web app with real-time task tracking and smart project management features.",
+  description: "Manufacturing management system: BOMs, manufacturing/work orders, role-based access, inventory & analytics (Next.js + Express + MongoDB).",
     tech: ["TypeScript", "React", "Node.js", "Express"],
     github: "https://github.com/geeky-vaiiib/ProdEase",
     live: ""
@@ -26,7 +26,7 @@ export const projects = [
   {
     id: 4,
     title: "ReNova",
-    description: "Energy consumption monitoring tool that promotes renewable adoption through data visualization.",
+  description: "Sustainable second‑hand marketplace enabling listing, cart, orders, CO₂ impact tracking with Next.js 14 + Node/Express backend.",
     tech: ["TypeScript", "Next.js", "MongoDB"],
     github: "https://github.com/geeky-vaiiib/ReNova",
   live: "https://re-nova.vercel.app/login"
@@ -34,7 +34,7 @@ export const projects = [
   {
     id: 5,
     title: "ServeToSave",
-    description: "Community-driven volunteer management and donation tracking platform.",
+  description: "Food redistribution platform connecting donors, NGOs & corporates: verification tiers, impact dashboards, and location‑aware donations.",
     tech: ["TypeScript", "React", "Firebase"],
     github: "https://github.com/geeky-vaiiib/ServeToSave",
     live: ""
@@ -42,7 +42,7 @@ export const projects = [
   {
     id: 6,
     title: "Uni-Bot",
-    description: "AI-powered campus assistant bot that helps students with academic queries and resources.",
+  description: "Authoritative SIT campus AI chatbot: rulebook, attendance/grading, facilities & placement info via local knowledge base + Supabase edge function.",
     tech: ["TypeScript", "React", "Node.js", "OpenAI API"],
     github: "https://github.com/geeky-vaiiib/Uni-Bot",
     live: ""
