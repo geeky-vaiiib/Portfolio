@@ -73,10 +73,10 @@ export const socialLinks = {
 export const aboutText = `I'm a full-stack developer passionate about creating clean, fast, and meaningful web apps. I love building interfaces that feel intuitive and codebases that scale well. Currently pursuing my B.E. at Siddaganga Institute of Technology (Class of 2027), I enjoy exploring modern web ecosystems, open-source collaboration, and UX that just feels right.`;
 
 export const facts = [
-  { icon: "🎓", label: "Siddaganga Institute of Technology — Graduating 2027" },
-  { icon: "💻", label: "Full-Stack Developer | React • Node • TypeScript" },
-  { icon: "🌍", label: "Based in Mysuru, Karnataka, India" },
-  { icon: "💬", label: "Open-Source Contributor & UX Enthusiast" }
+  { icon: "GraduationCap", label: "Siddaganga Institute of Technology — Graduating 2027" },
+  { icon: "Laptop", label: "Full-Stack Developer | React • Node • TypeScript" },
+  { icon: "MapPin", label: "Based in Tumkur, Karnataka, India" },
+  { icon: "MessageSquare", label: "Open-Source Contributor & UX Enthusiast" }
 ];
 
 export const personalContext = {
@@ -84,5 +84,5 @@ export const personalContext = {
   role: "Full-Stack Developer • Open-Source Contributor",
   institution: "Siddaganga Institute of Technology",
   graduationYear: "2027",
-  location: "Mysuru, Karnataka, India"
+  location: "Tumkur, Karnataka, India"
 };

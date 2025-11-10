@@ -1,4 +1,5 @@
 import { aboutText, facts, skills } from "../../lib/constants";
+import { GraduationCap, Laptop, MapPin, MessageSquare } from "lucide-react";
 
 export function About() {
   return (
@@ -41,8 +42,11 @@ export function About() {
                 key={index}
                 className="group flex items-start gap-4 p-5 bg-card border border-border rounded-xl hover:border-primary hover:shadow-lg transition-all duration-300"
               >
-                <span className="text-2xl group-hover:scale-110 transition-transform">
-                  {fact.icon}
+                <span className="group-hover:scale-110 transition-transform">
+                  {fact.icon === "GraduationCap" && <GraduationCap size={22} />}
+                  {fact.icon === "Laptop" && <Laptop size={22} />}
+                  {fact.icon === "MapPin" && <MapPin size={22} />}
+                  {fact.icon === "MessageSquare" && <MessageSquare size={22} />}
                 </span>
                 <span className="text-sm text-muted-foreground leading-relaxed">
                   {fact.label}
