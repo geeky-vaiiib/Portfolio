@@ -1232,6 +1232,30 @@
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
+/* Visually hide skip link until focused (accessibility) */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  z-index: 1000;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+}
+
 .btn-primary {
   color: var(--foreground);
   cursor: pointer;
