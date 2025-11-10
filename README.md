@@ -1,9 +1,7 @@
 
   # Portfolio
 
-  A modern developer portfolio built with **Vite + React (SWC)**, **TypeScript**, and **utility‑first styling (Tailwind v4 syntax)**. It showcases projects, experience, skills, and theming with a clean, accessible UI inspired by the original Figma design: https://www.figma.com/design/VW7vCl4SpQM3zVx0v4Tfwg/Developer-Portfolio-Website.
-
-  Live Demo (example project ReNova): https://re-nova.vercel.app/login
+  A modern developer portfolio built with **Vite + React (SWC)**, **TypeScript**, and **utility‑first styling (Tailwind v4 syntax)**. It showcases projects, experience, skills, and theming with a clean, accessible UI inspired by a clean design system.
 
   ## Features
 
@@ -81,8 +79,7 @@
     title: "NewProject",
     description: "Short summary",
     tech: ["TypeScript", "React"],
-    github: "https://github.com/username/NewProject",
-    live: "https://example.com" // optional
+    github: "https://github.com/username/NewProject"
   }
   ```
 
@@ -109,7 +106,6 @@
 
   ## Credits
 
-  - Figma design: Original concept referenced from the shared design link.
   - Icons: lucide-react
   - Headless components: Radix UI
 
