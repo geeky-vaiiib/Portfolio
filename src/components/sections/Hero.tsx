@@ -36,18 +36,26 @@ export function Hero() {
 
           {/* CTA */}
           <div className="flex flex-wrap gap-4 justify-center pt-6">
-            <button
-              onClick={() => scrollToSection("projects")}
+            <a
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("projects");
+              }}
               className="btn-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               View My Work
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("contact");
+              }}
               className="btn-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
               Get in Touch
-            </button>
+            </a>
           </div>
 
           {/* Social links */}

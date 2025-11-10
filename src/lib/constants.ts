@@ -81,7 +81,7 @@ export const facts = [
 
 export const personalContext = {
   name: "Vaibhav J P",
-  role: "Full-Stack Developer • Open-Source Contributor",
+  role: "Learning, Building & Innovating for the Web",
   institution: "Siddaganga Institute of Technology",
   graduationYear: "2027",
   location: "Tumkur, Karnataka, India"

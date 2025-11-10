@@ -157,6 +157,22 @@
   @apply bg-primary/20 text-foreground;
 }
 
+/* Skip-to-content link */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 16px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  padding: 8px 12px;
+  border-radius: 8px;
+  z-index: 1000;
+  transition: top 0.2s ease;
+}
+.skip-to-content:focus {
+  top: 16px;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -180,6 +196,16 @@
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Clean Button Styles */
