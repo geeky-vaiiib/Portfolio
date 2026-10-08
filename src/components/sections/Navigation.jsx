@@ -17,7 +17,12 @@ export function Navigation({ onDetail = false }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const bar = document.querySelector(".nav-progress");
+    const onScroll = () => {
+      setScrolled(window.scrollY > 24);
+      const max = document.documentElement.scrollHeight - innerHeight;
+      if (bar) bar.style.transform = `scaleX(${max > 0 ? Math.min(scrollY / max, 1) : 0})`;
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -46,6 +51,7 @@ export function Navigation({ onDetail = false }) {
           </button>
         </nav>
       </div>
+      <span className="nav-progress" aria-hidden="true" />
     </header>
   );
 }

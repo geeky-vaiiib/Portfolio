@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { SectionLabel } from "../SectionLabel.jsx";
 import { Reveal } from "../Reveal.jsx";
 
@@ -15,7 +15,10 @@ export function AlsoBuilt({ items }) {
             <a href={m.live || m.github} target="_blank" rel="noopener noreferrer">
               <span className="more-name">{m.name}</span>
               <span className="more-note">{m.note}</span>
-              <ArrowUpRight size={15} className="arrow-up" aria-hidden="true" />
+              <span className="more-go" aria-hidden="true">
+                <ArrowRight size={14} className="go-right" />
+                <ArrowUpRight size={15} className="arrow-up" />
+              </span>
               <span className="sr-only">{m.live ? " (live site)" : " on GitHub"}</span>
             </a>
           </li>

@@ -9,7 +9,7 @@ export function Projects() {
     <section id="work" className="section section-work" aria-labelledby="work-title">
       <div className="wrap">
         <Reveal>
-          <SectionLabel count={projects.length} className="" id="work-title">Selected work</SectionLabel>
+          <SectionLabel n="01" count={projects.length} id="work-title">Selected work</SectionLabel>
         </Reveal>
         <ol className="project-list">
           {projects.map((p, i) => (

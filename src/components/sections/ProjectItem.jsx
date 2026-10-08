@@ -3,7 +3,7 @@ import { Reveal } from "../Reveal.jsx";
 
 export function ProjectItem({ project: p, index }) {
   return (
-    <Reveal as="li" className="project" data-cursor="View">
+    <Reveal as="li" className="project" data-cursor="View project →">
       <span className="project-index">{String(index + 1).padStart(2, "0")}</span>
       <div className="project-body">
         <div className="project-head">

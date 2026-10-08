@@ -7,7 +7,7 @@ export function Contact() {
   return (
     <section id="contact" className="section" aria-labelledby="contact-title">
       <div className="wrap two-col">
-        <Reveal><SectionLabel id="contact-title">Contact</SectionLabel></Reveal>
+        <Reveal><SectionLabel n="03" id="contact-title">Contact</SectionLabel></Reveal>
         <Reveal delay={80}>
           <p className="contact-lede">
             If you're hiring, building something interesting, or just want to compare notes, write to me.

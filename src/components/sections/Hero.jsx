@@ -36,6 +36,7 @@ export function Hero() {
       <div className="wrap">
         <div ref={inner} className="hero-inner">
           <p className="eyebrow rise" style={{ "--i": 0 }}>
+            <span className="dot" aria-hidden="true" />
             Software engineer · AI/ML &amp; full-stack
           </p>
           <h1 id="hero-title" className="hero-title rise" style={{ "--i": 1 }}>
@@ -43,11 +44,10 @@ export function Hero() {
           </h1>
           <p className="lede rise" style={{ "--i": 2 }}>{intro}</p>
           <p className="hero-links rise" style={{ "--i": 3 }}>
-            <a href="#work" className="link link-strong">Selected work <ArrowDown size={14} className="arrow-down" /></a>
+            <a href="#work" className="link link-strong">Selected work <ArrowDown size={15} className="arrow-down" aria-hidden="true" /></a>
             <a href={socialLinks.email} className="link">{socialLinks.emailAddress}</a>
           </p>
           <p className="status rise" style={{ "--i": 4 }}>
-            <span className="dot" aria-hidden="true" />
             {personalContext.location} · <time>{time}</time> IST
           </p>
         </div>

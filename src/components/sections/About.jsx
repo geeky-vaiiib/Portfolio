@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="section" aria-labelledby="about-title">
       <div className="wrap two-col">
-        <Reveal><SectionLabel id="about-title">About</SectionLabel></Reveal>
+        <Reveal><SectionLabel n="02" id="about-title">About</SectionLabel></Reveal>
         <Reveal delay={80}>
           <p className="statement">
             I like projects where the interface and the system underneath have to agree: a screening form that is honest about what it can't conclude, a chatbot that cites its sources, a dashboard that stays readable when the data gets large.
@@ -19,7 +19,7 @@ export function About() {
             {skillGroups.map((g) => (
               <div key={g.label}>
                 <dt>{g.label}</dt>
-                <dd>{g.items}</dd>
+                <dd>{g.items.split(", ").map((t, i) => <span key={t}>{i > 0 && <i aria-hidden="true"> · </i>}{t}</span>)}</dd>
               </div>
             ))}
           </dl>
