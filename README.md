@@ -59,7 +59,7 @@
 
   ```bash
   npm run dev     # Start local dev server (port 3000)
-  npm run build   # Production build (output in /build)
+  npm run build   # Production build (output in /dist)
   ```
 
   ## Theming
